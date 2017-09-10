@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		BE9313761F6435BB00733997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9313751F6435BB00733997 /* AppDelegate.swift */; };
-		BE9313781F6435BB00733997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9313771F6435BB00733997 /* ViewController.swift */; };
+		BE9313781F6435BB00733997 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9313771F6435BB00733997 /* ChatListViewController.swift */; };
 		BE93137B1F6435BB00733997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9313791F6435BB00733997 /* Main.storyboard */; };
 		BE93137D1F6435BB00733997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE93137C1F6435BB00733997 /* Assets.xcassets */; };
 		BE9313801F6435BB00733997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE93137E1F6435BB00733997 /* LaunchScreen.storyboard */; };
+		BE9313911F65919500733997 /* ChatListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE93138F1F65919500733997 /* ChatListCellTableViewCell.swift */; };
+		BE9313921F65919500733997 /* ChatListCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9313901F65919500733997 /* ChatListCellTableViewCell.xib */; };
+		BE9313961F65ECED00733997 /* ChatListCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9313951F65ECED00733997 /* ChatListCellViewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE9313721F6435BB00733997 /* Chat Simples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat Simples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9313751F6435BB00733997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE9313771F6435BB00733997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE9313771F6435BB00733997 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		BE93137A1F6435BB00733997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE93137C1F6435BB00733997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE93137F1F6435BB00733997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE9313811F6435BB00733997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE93138F1F65919500733997 /* ChatListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCellTableViewCell.swift; sourceTree = "<group>"; };
+		BE9313901F65919500733997 /* ChatListCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListCellTableViewCell.xib; sourceTree = "<group>"; };
+		BE9313951F65ECED00733997 /* ChatListCellViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCellViewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 		BE9313881F658D3900733997 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE9313951F65ECED00733997 /* ChatListCellViewData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -80,8 +87,9 @@
 		BE9313891F658D3F00733997 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BE93138C1F6590D600733997 /* ChatListCell */,
 				BE9313791F6435BB00733997 /* Main.storyboard */,
-				BE9313771F6435BB00733997 /* ViewController.swift */,
+				BE9313771F6435BB00733997 /* ChatListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +110,15 @@
 				BE93137E1F6435BB00733997 /* LaunchScreen.storyboard */,
 			);
 			path = Etc;
+			sourceTree = "<group>";
+		};
+		BE93138C1F6590D600733997 /* ChatListCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE93138F1F65919500733997 /* ChatListCellTableViewCell.swift */,
+				BE9313901F65919500733997 /* ChatListCellTableViewCell.xib */,
+			);
+			path = ChatListCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9313801F6435BB00733997 /* LaunchScreen.storyboard in Resources */,
+				BE9313921F65919500733997 /* ChatListCellTableViewCell.xib in Resources */,
 				BE93137D1F6435BB00733997 /* Assets.xcassets in Resources */,
 				BE93137B1F6435BB00733997 /* Main.storyboard in Resources */,
 			);
@@ -176,7 +194,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE9313781F6435BB00733997 /* ViewController.swift in Sources */,
+				BE9313911F65919500733997 /* ChatListCellTableViewCell.swift in Sources */,
+				BE9313781F6435BB00733997 /* ChatListViewController.swift in Sources */,
+				BE9313961F65ECED00733997 /* ChatListCellViewData.swift in Sources */,
 				BE9313761F6435BB00733997 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9XV8HU23K;
-				INFOPLIST_FILE = "Chat Simples/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Chat Simples/Etc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "theiosdisciple.com.medium.Chat-Simples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,7 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9XV8HU23K;
-				INFOPLIST_FILE = "Chat Simples/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Chat Simples/Etc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "theiosdisciple.com.medium.Chat-Simples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
