@@ -54,14 +54,54 @@
 		BE9313741F6435BB00733997 /* Chat Simples */ = {
 			isa = PBXGroup;
 			children = (
-				BE9313751F6435BB00733997 /* AppDelegate.swift */,
-				BE9313771F6435BB00733997 /* ViewController.swift */,
-				BE9313791F6435BB00733997 /* Main.storyboard */,
-				BE93137C1F6435BB00733997 /* Assets.xcassets */,
-				BE93137E1F6435BB00733997 /* LaunchScreen.storyboard */,
-				BE9313811F6435BB00733997 /* Info.plist */,
+				BE93138B1F658D5B00733997 /* Etc */,
+				BE9313871F658D1D00733997 /* ChatList */,
 			);
 			path = "Chat Simples";
+			sourceTree = "<group>";
+		};
+		BE9313871F658D1D00733997 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				BE93138A1F658D4500733997 /* Presenter */,
+				BE9313891F658D3F00733997 /* View */,
+				BE9313881F658D3900733997 /* Model */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		BE9313881F658D3900733997 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE9313891F658D3F00733997 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE9313791F6435BB00733997 /* Main.storyboard */,
+				BE9313771F6435BB00733997 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE93138A1F658D4500733997 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BE93138B1F658D5B00733997 /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				BE9313751F6435BB00733997 /* AppDelegate.swift */,
+				BE9313811F6435BB00733997 /* Info.plist */,
+				BE93137C1F6435BB00733997 /* Assets.xcassets */,
+				BE93137E1F6435BB00733997 /* LaunchScreen.storyboard */,
+			);
+			path = Etc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
